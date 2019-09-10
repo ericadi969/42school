@@ -19,11 +19,11 @@ char	*ft_strdup(char *src)
 	char	*str;
 
 	len = 0;
-	while (src[len])
+	while (src[len] != '\0')
 		len++;
 	str = (char*)malloc(sizeof(*str) * (len + 1));
 	i = 0;
-	while (i < len)
+	while (src[i] != '\0')
 	{
 		str[i] = src[i];
 		i++;

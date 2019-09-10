@@ -11,7 +11,18 @@
 /* ************************************************************************** */
 
 void		ft_putchar(char c);
-void		ft_putstr(char *str); //прописать без нее
+
+void		ft_putstring(char *str)
+{
+	int i;
+
+	i = 0;
+	while ( str[i] != '\0')
+	{
+		ft_putchar(str[i]);
+		i++;
+	}
+}
 
 int			main(int argc, char **argv)
 {
@@ -20,7 +31,7 @@ int			main(int argc, char **argv)
 	i = 1;
 	while (i < argc)
 	{
-		ft_putstr(argv[i]);
+		ft_putstring(argv[i]);
 		ft_putchar('\n');
 		i++;
 	}

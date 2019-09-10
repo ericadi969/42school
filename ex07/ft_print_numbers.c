@@ -24,5 +24,4 @@ void		ft_print_numbers(void)
 		ft_putchar(number);
 		number++;
 	}
-	ft_putchar('\n');
 }
