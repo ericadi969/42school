@@ -11,12 +11,21 @@
 # **************************************************************************** #
 
 NAME = libft.a
-PATH_SRC = ./srcs/
+SOUDRCE_FILE = ./srcs/
 HEADER = ./includes/*.h
 FLAG = -Wall -Wextra -Werror
 OPTION = -c -I $(HEADER)
-SRC = $(PATH_SRC) *.c
-OBJ = *.o
+SRC = $(SOUDRCE_FILE)ft_putchar.c\
+	  $(SOUDRCE_FILE)ft_putstr.c\
+	  $(SOUDRCE_FILE)ft_strcmp.o\
+	  $(SOUDRCE_FILE)ft_strlen.o\
+	  $(SOUDRCE_FILE)ft_swap.o
+
+OBJ = ft_putchar.o\
+	  ft_putstr.o\
+	  ft_strcmp.o\
+	  ft_strlen.o\
+	  ft_swap.o
 
 all: $(NAME)
 
